@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palpitometro</title>
+<link rel="preload" href="img/fundo.jpg" as="image">
+<link rel="preload" href="img/dino.gif" as="image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="title"><img class="title-dino" src="img/dino.gif" alt="Dino"><span class="title-text">Palpitometro</span><img class="title-dino" src="img/dino.gif" alt="Dino"></header>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="name-card">
+      <img class="cat" src="img/gatinho.gif" alt="Gatinho">
+      <label for="playerName">Seu nome</label>
+      <input id="playerName" type="text" placeholder="Digite seu nome">
+      <button id="saveName">Salvar</button>
+    </div>
+    <div class="duck-card">
+      <img class="duck" src="img/patinho.png" alt="Patinho">
+      <div class="duck-bubble"><p id="duckMessage"></p></div>
+      <div class="duck-actions">
+        <button id="btnStatsModes">Modos jogados</button>
+        <button id="btnStatsWins">Acertos</button>
+        <button id="btnStatsLosses">Erros</button>
+      </div>
+    </div>
+  </aside>
+<main id="game">
+  <div class="game-topbar">
+    <div class="pill">
+      <span class="label">Dificuldade</span>
+      <select id="difficulty" class="select">
+        <option value="facil">Fácil</option>
+        <option value="normal" selected>Normal</option>
+        <option value="dificil">Difícil</option>
+      </select>
+    </div>
+    <button id="restart" class="ghost">Reiniciar</button>
+  </div>
+<img id="dino" src="img/dino.gif" alt="Dino">
+<div id="bubble" class="bubble">
+<p id="message"></p>
+</div>
+<div class="hud">
+  <input id="guess" type="number" min="1" step="1" placeholder="Seu palpite">
+  <span id="attempts"></span>
+  <button id="submit">Chutar</button>
+  <button id="bonusTry">Tentativa extra</button>
+</div>
+</main>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
