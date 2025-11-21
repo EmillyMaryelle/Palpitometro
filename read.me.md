@@ -18,7 +18,7 @@ Mini-jogo de adivinhação com dino. O dino dá feedback na caixa de diálogo (a
 3. Escolha a dificuldade na barra superior do jogo.
 4. Digite um palpite e clique em **Chutar** (ou pressione Enter).
 5. Leia o balão do dino para saber se está alto/baixo e veja uma dica: "Tente um número entre L–U".
-6. Use **Reiniciar** para uma nova rodada. (Essa função nao apaga seu score/estatisticas no jogo)
+6. Use **Reiniciar** para uma nova rodada. (Essa função nao apaga seu score/estatisticas no jogo).
 
 ## Dificuldades e tentativas
 - Fácil: intervalo 1–20, 10 palpites
